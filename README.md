@@ -6,9 +6,9 @@ Inspired by Silksong speedrunning's [SpeedPatch](https://github.com/hk-speedrunn
 
 # Installing the patch
 
-* Download `SpeedrunPatch-v*.*.*.zip` from releases
+* Download `OWSR.SpeedrunPatch-v*.*.*.zip` from releases
 * Right click Outer Wilds on Steam, select Manage > Browse local files
-* Copy the contents of `SpeedrunPatch-v*.*.*.zip` into the `Outer Wilds` folder
+* Copy the contents of `OWSR.SpeedrunPatch-v*.*.*.zip` into the `Outer Wilds` folder
 * Open the game. Try reading the easter egg scroll on Brittle Hollow to see if the patch worked; if it did, it should take less than a second to translate.
 
 # Uninstalling the patch
