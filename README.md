@@ -1,4 +1,4 @@
-# OWSR.TranslatorFix
+# OWSR.SpeedrunPatch
 
 **(NOT YET SPEEDRUN-LEGAL)** patch for Outer Wilds making text translation no longer framerate dependent.
 
