@@ -11,7 +11,7 @@ namespace OWSR.SpeedrunPatch.src
 {
     internal class Watermark
     {
-        private static readonly string patchVersion = "0.1.2";
+        private static readonly string patchVersion = "0.1.3";
 
         public static void ApplyPatch(ModuleDefinition module)
         {
