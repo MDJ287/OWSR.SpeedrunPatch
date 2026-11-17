@@ -6,9 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Mono.Cecil">
-      <HintPath>bin\Debug\netstandard2.1\Mono.Cecil.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Lib.Harmony" Version="2.4.3" />
   </ItemGroup>
 
 </Project>

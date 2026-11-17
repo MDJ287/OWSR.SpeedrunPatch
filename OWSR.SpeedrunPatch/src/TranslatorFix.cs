@@ -1,5 +1,4 @@
-﻿using Mono.Cecil.Cil;
-using Mono.Cecil;
+﻿
 using Mono.Collections.Generic;
 using System;
 using System.Collections.Generic;
@@ -11,8 +10,9 @@ namespace OWSR.SpeedrunPatch.src
 {
     internal class TranslatorFix
     {
-        public static void ApplyPatch(ModuleDefinition module)
+        public static void ApplyPatch()
         {
+            /*
             TypeDefinition translatorType = module.GetType("NomaiTranslatorProp");
             MethodDefinition displayNodeMethod = translatorType.Methods.First(method => method.Name == "DisplayTextNode");
 
@@ -57,6 +57,7 @@ namespace OWSR.SpeedrunPatch.src
 
             // branch to the start of the "if" condition at the end of its body (turn it into a while loop)
             ilProcessor.InsertAfter(lastIfBodyInstruction, ilProcessor.Create(OpCodes.Br_S, firstIfConditionInstruction));
+            */
         }
     }
 }

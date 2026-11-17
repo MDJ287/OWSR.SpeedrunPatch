@@ -1,5 +1,4 @@
-﻿using Mono.Cecil.Cil;
-using Mono.Cecil;
+﻿
 using Mono.Collections.Generic;
 using System;
 using System.Collections.Generic;
@@ -13,8 +12,9 @@ namespace OWSR.SpeedrunPatch.src
     {
         private static readonly string patchVersion = "0.1.2";
 
-        public static void ApplyPatch(ModuleDefinition module)
+        public static void ApplyPatch()
         {
+            /*
             string patchText = $"Speedrun Patch v{patchVersion}: TranslatorFix";
 
             TypeDefinition titleScreenType = module.GetType("TitleScreenManager");
@@ -65,6 +65,7 @@ namespace OWSR.SpeedrunPatch.src
             {
                 titleScreenIl.InsertAfter(instructionsToAdd[i - 1], instructionsToAdd[i]);
             }
+            */
         }
     }
 }
