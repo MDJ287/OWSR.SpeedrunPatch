@@ -13,6 +13,8 @@ Inspired by Silksong speedrunning's [SpeedPatch](https://github.com/hk-speedrunn
 
 **NOTE:** This patch **does not work** on Outer Wilds v1.0.7 (Unity Doorstop will crash the game). If playing on v1.0.7, uninstall the patch before launching the game. Every other game version works fine.
 
+**If using mods:** The patch version number **will not be displayed** as the Mod Loader will overwrite it with its own text (the rest of the patch will work normally). For runs in the Mods category of the Category Extensions leaderboard, ensure your submission has the correct patch version listed!
+
 # Uninstalling the patch
 
 Browse local files for Outer Wilds, delete the `owsr` folder and its contents as well as `.doorstop_version`, `doorstop_config.ini`, and `winhttp.dll`. This should remove any trace that the patch was ever installed.
