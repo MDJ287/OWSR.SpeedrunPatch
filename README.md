@@ -9,7 +9,9 @@ Inspired by Silksong speedrunning's [SpeedPatch](https://github.com/hk-speedrunn
 * Download `OWSR.SpeedrunPatch-v*.*.*.zip` from releases
 * Right click Outer Wilds on Steam, select Manage > Browse local files
 * Copy the contents of `OWSR.SpeedrunPatch-v*.*.*.zip` into the `Outer Wilds` folder
-* Open the game. Try reading the easter egg scroll on Brittle Hollow to see if the patch worked; if it did, it should take less than a second to translate.
+* Launch the game. The Speedrun Patch version number should be visible in the bottom-left of the title screen, under the Outer Wilds version number.
+
+**NOTE:** This patch **does not work** on Outer Wilds v1.0.7 (Unity Doorstop will crash the game). If playing on v1.0.7, uninstall the patch before launching the game. Every other game version works fine.
 
 # Uninstalling the patch
 
