@@ -12,13 +12,9 @@ namespace Doorstop
     {
         public static void Start()
         {
-            new Harmony("com.owsr.speedrunpatch").PatchAll();
-
-            // apply patches
-
-            Watermark.ApplyPatch();
-
-            TranslatorFix.ApplyPatch();
+            File.WriteAllText("_start.txt", "");
+            new Harmony("OWSR.SpeedrunPatch").PatchAll(Assembly.GetExecutingAssembly());
+            File.WriteAllText("_done.txt", $"{typeof(NomaiTranslatorProp).Name}");
         }
     }
 }
