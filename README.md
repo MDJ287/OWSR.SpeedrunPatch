@@ -17,19 +17,21 @@ Browse local files for Outer Wilds, delete the `owsr` folder and its contents as
 
 # Q&A
 
+## Is this patch legal for speedruns?
+
+Not yet! We will probably be holding a community vote at some point. Currently most people seem to be in favor.
+
 ## Why not go through the Mod Loader?
 
 The Outer Wilds Mod Loader has some effects that affect speedruns; for example, it adds an extra button in the pause menu, changing the behavior of quick-savequits. This patch only fixes the translator and does nothing else.
 
 ## How exactly does this patch work?
 
-TODO
+This patch uses [Unity Doorstop](https://github.com/NeighTools/UnityDoorstop) and [Mono.Cecil](https://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/) to modify the assembly of the game and introduce certain speedrun-legal patches.
 
-Temporary short answer: it uses [Unity Doorstop](https://github.com/NeighTools/UnityDoorstop) and [Mono.Cecil](https://www.mono-project.com/docs/tools+libraries/libraries/Mono.Cecil/) to modify the assembly of the game so that the translator translates more than 1 word per frame.
+### TranslatorFix
 
-## Is this patch legal for speedruns?
-
-Not yet! We will probably be holding a community vote at some point. Currently most people seem to be in favor.
+The method `DisplayTextNode()` of class `NomaiTranslatorProp` runs once per rendered frame, and can increment the number of translated words (`_numTranslatedWords`) once each time it runs. The game tries to translate every piece of text in 0.2 seconds, but this method creates a bottleneck base on the player's framerate. With this patch, the game will repeatedly increment `_numTranslatedWords` until it reaches the amount it is designed to (this is effectively equivalent to the translation time a player would have if they had "infinite" frames per second).
 
 ## I have a question/suggestion, or I think you made a mistake, or I want to discuss the patch
 
