@@ -11,11 +11,11 @@ namespace OWSR.SpeedrunPatch.src
 {
     internal class Watermark
     {
-        private static readonly string patchVersion = "0.1.3";
+        private static readonly string patchVersion = "1.0.0";
 
         public static void ApplyPatch(ModuleDefinition module)
         {
-            string patchText = $"Speedrun Patch v{patchVersion}: TranslatorFix";
+            string patchText = $"Speedrun Patch v{patchVersion}";
 
             TypeDefinition titleScreenType = module.GetType("TitleScreenManager");
             MethodDefinition fadeInTitleMethod = titleScreenType.Methods.First(method => method.Name == "FadeInTitleLogo");
